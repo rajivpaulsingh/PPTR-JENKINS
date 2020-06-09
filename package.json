@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test-e2e": "./node_modules/mocha/bin/mocha --timeout=30000 ./tests/e2e.test.js",
-    "test-smoke": "./node_modules/mocha/bin/mocha --timeout=30000 ./tests/smoke.test.js"
+    "test-smoke": "./node_modules/mocha/bin/mocha --timeout=30000 ./tests/smoke.test.js",
+    "start-jenkins-server": "java -jar jenkins.war -httpPost=8080 --enable-future-java"
   },
   "author": "Rajiv Singh",
   "license": "ISC",
